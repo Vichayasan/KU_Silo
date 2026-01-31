@@ -27,11 +27,6 @@ unsigned long previousMillis, teleMillis = 0;
 
 String deviceToken;
 
-// MongoDB
-// IP 158.108.242.152
-// Username: sreshthaputrav_db_user
-// Password: reyVrzndww80EyGV
-
 const char* serverName = "";
 String apiKey = "";
 
@@ -299,5 +294,6 @@ void loop() {
     Serial.printf(" Message: %.2f \n", json);
   }
   
+
 
 }
