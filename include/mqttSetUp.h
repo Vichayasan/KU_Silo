@@ -2,8 +2,8 @@
 
 AsyncMqttClient mqttClient;
 
-#define MQTT_HOST IPAddress(188, 166, 238, 0)
-#define MQTT_PORT 1883
+#define MQTT_HOST IPAddress(***, ***, ***, *)
+#define MQTT_PORT ****
 
 void connectToMqtt() {
   Serial.println("Connecting to MQTT...");
@@ -38,6 +38,7 @@ void _initMqtt(){
     mqttClient.onConnect(onMqttConnect);
     mqttClient.onPublish(onMqttPublish);
     mqttClient.setServer(MQTT_HOST, MQTT_PORT);
-    mqttClient.setCredentials("admin", "password");
+    mqttClient.setCredentials("*****", "********");
     connectToMqtt();
+
 }
